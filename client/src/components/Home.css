@@ -1,0 +1,209 @@
+/* Color Palette Variables */
+:root {
+  --primary-teal: #0d9488;
+  --primary-teal-hover: #0f766e;
+  --primary-light: #f0fdfa;
+  --icon-bg: #ccfbf1;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --bg-gradient: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  --card-border: rgba(226, 232, 240, 0.8);
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  --card-shadow-hover: 0 20px 25px -5px rgba(13, 148, 136, 0.12);
+}
+
+.home-wrapper {
+  background-color: #f8fafc;
+  color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero-section {
+  background: var(--bg-gradient);
+  border-bottom: 1px solid var(--card-border);
+}
+
+/* Redesigned Hero Badge */
+.hero-badge-container {
+  display: inline-block;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 6px 16px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.badge-icon {
+  color: var(--primary-teal);
+  font-size: 0.9rem;
+}
+
+.hero-title {
+  font-size: 2.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.text-teal {
+  color: var(--primary-teal);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Redesigned CTA Button */
+.btn-hero-primary {
+  background-color: var(--primary-teal);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 10px 20px -5px rgba(13, 148, 136, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-hero-primary:hover {
+  background-color: var(--primary-teal-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px -5px rgba(13, 148, 136, 0.4);
+}
+
+.cta-arrow {
+  transition: transform 0.2s ease;
+}
+
+.btn-hero-primary:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+/* Standard Teal Button */
+.btn-teal {
+  background-color: var(--primary-teal);
+  border: none;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn-teal:hover {
+  background-color: var(--primary-teal-hover);
+  color: #ffffff;
+}
+
+.hero-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+  max-height: 420px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.08));
+}
+
+/* Features Cards */
+.feature-card {
+  background: #ffffff;
+  border-radius: 16px !important;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.feature-icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-light);
+  color: var(--primary-teal);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Doctors Section */
+.subtitle-badge {
+  background-color: var(--icon-bg);
+  color: var(--primary-teal);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.doctor-card {
+  background: #ffffff;
+  border-radius: 16px !important;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--card-border) !important;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--primary-teal) !important;
+}
+
+.doctor-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-teal);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.specialization-badge {
+  background-color: var(--primary-light);
+  color: var(--primary-teal);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.doctor-details {
+  font-size: 0.9rem;
+}
+
+/* Responsive Overrides */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-hero-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
